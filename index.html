@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#about" onclick="opentab('skills')">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    <div class="header-text">
+        <h1>Hi, I'm Houcine <span>HAMNOUCHE</span></h1>
+        <br>
+        <p >A Computer Science Student</p>
+    </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/coding.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <div class="tab-titles">
+                        <h2 class="tab-links active-link" onclick="opentab('education')">Education</h2>
+                        <h2 class="tab-links" onclick="opentab('skills')">Skills</h2>
+                        <h2 class="tab-links" onclick="opentab('experience')">Experience</h2>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                            <ul>
+                                <li>
+                                    <h3>2024 – Present</h3>
+                                    <p>Computer Science At University Clermont Auvergne (ISIMA), France</p>
+                                </li>
+                                <li>
+                                    <h3>2020 – 2024</h3>
+                                    <p>ICT & Telecommunications ENGENEER, ENSTTIC (ex:INTTIC), Algeria</p>
+                                </li>
+                                <li>
+                                    <h3>2020</h3>
+                                    <p>High School Diploma (Experimental Sciences) with Honors, Algeria</p>
+                                </li>
+                                <li>
+                                    <h3>2019 – 2020</h3>
+                                    <p>Preparatory Classes, National Polytechnic School Maurice Audin, Algeria</p>
+                                </li>
+                                <li>
+                                    <h3>2018 – 2019</h3>
+                                    <p>Mathematics and Computer Science, University of Oran 1, Algeria</p>
+                                </li>
+                                <li>
+                                    <h3>2018</h3>
+                                    <p>High School Diploma (Mathematics) with Distinction, Algeria</p>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="tab-contents grid" id="skills">
+                        <ul>
+                            <li>
+                                <h3>Soft Skills</h3>
+                                <p>Problem-Solving ▪ Critical Thinking ▪ Teamwork ▪ Communication ▪ Adaptability ▪ Time Management</p>
+                            </li>
+                            <li>
+                                <h3>Programming Languages</h3>
+                                <p>Java ▪ C/C++ ▪ JavaScript ▪ Python ▪ PHP</p>
+                            </li>
+                            <li>
+                                <h3>Networking</h3>
+                                <p>CCNA LEVEL▪ GNS3 ▪ Socket Programming with Java and C</p>
+                            </li>
+                            <li>
+                                <h3>Cybersecurity</h3>
+                                <p>Basic Cybersecurity Concepts and Techniques</p>
+                            </li>
+                            <li>
+                                <h3>Databases</h3>
+                                <p>MySQL ▪ SQL Server</p>
+                            </li>
+                            <li>
+                                <h3>Web Technologies</h3>
+                                <p>XML ▪ HTML ▪ CSS ▪ JSON</p>
+                            </li>
+                            <li>
+                                <h3>Telecommunications</h3>
+                                <p>Signal Processing ▪ Microwaves ▪ Antennas and Propagation ▪ Information Coding & Encoding ▪ Encryption Techniques ▪ Multiplexing</p>
+                            </li>
+                            <li>
+                                <h3>Virtualization & Cloud Computing</h3>
+                                <p>VMware ESXi Configuration ▪ Cloud Basics ▪ Cloud Infrastructure ▪ Cloud Service Models (IaaS, PaaS, SaaS) ▪ Cloud Security</p>
+                            </li>
+                            <li>
+                                <h3>Image Processing</h3>
+                                <p>Filtering ▪ Segmentation ▪ Geometric Transformation ▪ Edge Detection ▪ Morphological Operations ▪ Image Enhancement</p>
+                            </li>
+                            <li>
+                                <h3>Compiler & Language Processing</h3>
+                                <p>ANTLR parser generation ▪ Lexical and syntactic analysis ▪ Abstract Syntax Tree (AST) creation ▪ Compiler design & language processing ▪ Context-Free Grammar (CFG)</p>
+                            </li>
+                            <li>
+                                <h3>Operating Systems</h3>
+                                <p>Windows ▪ Linux (Ubuntu) ▪ Process Management ▪ Threading & Concurrency ▪ Memory Management ▪ File Systems ▪ Scheduling Algorithms</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <h3><strong>2024</strong></h3>
+                                <p><strong>Practical Internship – Supervision and Maintenance Service</strong></p>
+                                <p><em>Mobilis, Oran, Algeria</em></p>
+                                <ul>
+                                    <li><strong>Gained knowledge</strong> of cellular network principles and telecom service management at Mobilis.</li>
+                                    <li><strong>Participated</strong> in the supervision and maintenance of switching and transmission equipment (<strong>routers, BSC, RNC, servers</strong>).</li>
+                                    <li><strong>Acquired in-depth understanding</strong> of <strong>GSM, 3G, 4G</strong> network infrastructures and telecom power supply systems.</li>
+                                    <li><strong>Developed skills</strong> in fault management, performance optimization, and inter-operator connection management.</li>
+                                </ul>
+                                <p><strong>Internship duration:</strong> <em>21 days</em></p>
+                            </li>
+                            <li>
+                                <h3><strong>2023</strong></h3>
+                                <p><strong>Intern in Transmission</strong></p>
+                                <p><em>Algérie Télécom, Oran, Algeria</em></p>
+                                <ul>
+                                    <li><strong>Collaborated</strong> with the technical team to ensure the proper functioning of transmission equipment.</li>
+                                    <li><strong>Assisted</strong> in monitoring and preventive maintenance of communication systems.</li>
+                                    <li><strong>Gained hands-on experience</strong> in transmission technologies and related protocols.</li>
+                                </ul>
+                                <p><strong>Internship duration:</strong> <em>12 days</em></p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------portfolio--------->
+<div id="portfolio">
+    <div class="container">
+        <div class="sub-title"><h1>Projects</h1></div>
+        <div class="project-list">
+            <div class="project">
+                <img src="./image/XO2.PNG" alt="image_1">
+                <div class="layer">
+                    <h3>Multiplayer Tic-Tac-Toe Game over Network</h3>
+                    <p>Multiplayer Tic-Tac-Toe game in Java using TCP sockets with Swing GUI and real-time sync</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./image/domino.JPG" alt="image_2">
+                <div class="layer">
+                    <h3>Image Processing Domino Detection</h3>
+                    <p>MATLAB project for detecting dominoes using color masking, edge detection, and morphological operations.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./image/Application.PNG" alt="image_3">
+                <div class="layer">
+                    <h3>Web-Project</h3>
+                    <p>Web app in PHP/MySQL for car listings with user login, search, and ad posting features.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- Hidden projects -->
+            <div class="project hidden-projects">
+                <img src="./image/Radio_image.JPG" alt="image_3">
+                <div class="layer">
+                    <h3>Radio Wave Propagation Models</h3>
+                    <p>MATLAB simulations of radio wave propagation models: FSPL, diffraction, log-distance, two-ray, and Hata.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project hidden-projects">
+                <img src="./image/ouput_fisher.png" alt="image_3">
+                <div class="layer">
+                    <h3>Machine-Learning-Classifiers</h3>
+                    <p>Decision Tree, KNN, and Naive Bayes with training and evaluation</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Buttons for toggling visibility -->
+        <a href="#" class="btn see-more">See more</a>
+        <a href="#" class="btn show-less" style="display: none;">Show less</a>
+    </div>
+</div>
+<!---contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>hamnouchehoucine@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+33 6 37 16 26 55</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/hamnouche-houcine-99b53b313/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/houcineHAM" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<script>
+    function opentab(tabname, event = null) {
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        if (event) {
+            event.currentTarget.classList.add("active-link");
+        } else {
+            // Facultatif : si le clic vient du menu, activer le lien "Skills" dans les tabs
+            document.querySelector(".tab-links[onclick*='" + tabname + "']").classList.add("active-link");
+        }
+
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxMjkU6cBMghamFC2lyrm-OkoJC9SwvtnnrHPTOa-TcUVYR31tl_XIFOWMKXKZ16Et4kg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },10000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+<script>
+    // "See more" button functionality
+    document.querySelector('.see-more').addEventListener('click', function (e) {
+        e.preventDefault();
+        const hiddenProjects = document.querySelectorAll('.hidden-projects');
+        hiddenProjects.forEach(project => {
+            project.style.display = 'block';
+        });
+        this.style.display = 'none'; // Hide the "See more" button
+        document.querySelector('.show-less').style.display = 'inline-block'; // Show the "Show less" button
+    });
+
+    // "Show less" button functionality
+    document.querySelector('.show-less').addEventListener('click', function (e) {
+        e.preventDefault();
+        const hiddenProjects = document.querySelectorAll('.hidden-projects');
+        hiddenProjects.forEach(project => {
+            project.style.display = 'none';
+        });
+        this.style.display = 'none'; // Hide the "Show less" button
+        document.querySelector('.see-more').style.display = 'inline-block'; // Show the "See more" button
+    });
+</script>
+
+
+</body>
+<footer style="text-align: center; padding: 1em 0; background-color: #000; color: #fff; font-size: 0.9em;">
+    <p>&copy; HAMNOUCHE HOUCINE</p>
+  </footer>
+  
+</html>
