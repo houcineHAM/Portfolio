@@ -383,39 +383,125 @@ form .btn2{
     
 }
 /*-----------------css for small screen-------------------*/
+nav .fas{
+    display: none;
+}
 /* ----------- Écrans ≤ 400px ----------- */
 @media (max-width: 400px) {
-    /* Navigation */
-    nav ul {
-        display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
-        justify-content: center; /* Centre les éléments horizontalement */
-        gap: 20px; /* Espacement entre les éléments */
-        list-style: none;
+    body, html {
+        margin: 0;
         padding: 0;
-        gap: 30px;
-        margin: 20px auto 0 auto; /* Espace en haut de la page */
+        overflow-x: hidden;
     }
-    /* Header Text */
-    .header-text {
-        position: relative;
-        top: -20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        width: 90%;
-        max-width: 400px;
+    
+    .container {
+        width: 100%;
         padding: 10px;
-        z-index: 1;
+        background-color: #121212;
+        color: #fff;
+        box-sizing: border-box;
+    }
+    
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul .fas{
+        position: absolute;
+        top:25px;
+        left:25px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        background: black;
+        position: fixed;
+        top:0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;        /* Stack vertically */
+        align-items: flex-start;       /* Align to the left */
+        justify-content: flex-start;   /* Start at the top */
+        list-style: none;
+        gap: 20px;                     /* Space between items */
+        margin: 0;
+        transition: right 0.5s;
     }
 
     nav ul li {
-        margin: 0;
+        width: 100%;
+        margin: 30px;                     /* Remove default margin */
+        text-align: center;
+        padding-left: 80px;
     }
 
     nav ul li a {
-        color: #fff;
+        color: white;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 16px;
+    }
+
+    #header {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        padding-top: 80px; 
+    }
+
+    .header-text {
+        font-size: 16px;
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .header-text h1 {
+        font-size: 28px;
+    }
+
+    .row {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    #about {
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    .about-col-2 h1 {
+        padding-left: 0%;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        
+    }
+    
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+    .about-col-2 h2 {
+        display: block;         
+        width: 100%;           
+        margin-bottom: 15px;   
+        font-size: 16px;
+        margin-right: 0;
+    }
+    .fa-bars {
+        position: absolute; /* or fixed, depending on your design */
+        right: 25px;         /* use right instead of left if you want it on the right */
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
     }
 }
 @media (max-width:600){
@@ -423,6 +509,7 @@ form .btn2{
         flex-direction: column;
         gap: 30px;
     }
+
 
     .about-col-1 img {
         margin-top: 0;
@@ -436,12 +523,11 @@ form .btn2{
 @media (max-width: 600px) {
     #header {
         background-image: url('image/houcine phone.png');
-        width: 120%;
+        width: 100%;
         
     }
 
     .header-text {
-        margin-top: 100%;
         font-size: 16px;
     }
 
@@ -451,19 +537,19 @@ form .btn2{
 }
 
 /* ----------- Écrans ≤ 768px ----------- */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     nav ul {
         display: flex;
         align-items: center;
         font-size:16px;
         justify-content: center; /* Center items properly */
-        gap: 20px;
+        gap: 0px;
         padding: 0;
         list-style: none;
     }
     .header-text {
         position: absolute;
-        top: -20%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); /* Centered properly */
         text-align: center;
@@ -508,6 +594,6 @@ form .btn2{
     display: none;
 }
 #portfolio .container {
-    text-align: center; /* Assure que tout est centré dans le conteneur */
+    text-align: center; 
 }
 
