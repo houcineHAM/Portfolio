@@ -386,8 +386,8 @@ form .btn2{
 nav .fas{
     display: none;
 }
-/* ----------- Écrans ≤ 400px ----------- */
-@media (max-width: 400px) {
+
+@media (max-width: 600px) {
     body, html {
         margin: 0;
         padding: 0;
