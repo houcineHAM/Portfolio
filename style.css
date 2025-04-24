@@ -505,6 +505,9 @@ nav .fas{
     }
 }
 @media (max-width:600){
+     nav .fas {
+        display: none;
+    }
     .row {
         flex-direction: column;
         gap: 30px;
